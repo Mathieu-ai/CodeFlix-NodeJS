@@ -1,8 +1,9 @@
-const getName = () => {
-    return 'Mat';
-  };
+module.exports = function() {
+    console.log('Mat');
+
+}
   
-  exports.getName = getName;
-  
+
+
   
   
