@@ -6,4 +6,6 @@ function empty() {
     eventEmitter.emit('hi');
 }
 
-empty()
+module.exports = empty()
+
+
