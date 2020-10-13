@@ -6,8 +6,7 @@ if (!arg) // ! = not => donc pas, (!true) = false; vice versa
     return;
 
 if (!fs.existsSync(arg)) {
-    fs.createReadStream(`${arg}`).pipe(fs.createWriteStream(`File: ${arg} successfully duplicated! `));
-    console.log(`File: ${arg} successfully duplicated! `)
+    console.log(`I don't know if you know that I can't duplicate things that don't exist `)
     return
 }  
 
@@ -19,6 +18,5 @@ if (stat.isFile()) {
 }
 
 else if(stat.isDirectory()) {
-    fs.createReadStream(`${arg}`).pipe(fs.createWriteStream(`${arg}.copy`));
-    console.log(`File: ${arg} successfully duplicated! `)
+    console.log(`I can't duplicate a directory :( `)
 }
