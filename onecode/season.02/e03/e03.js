@@ -1,12 +1,11 @@
 const fs = require('fs')
-const remov = require('C:/Users/Mathieu-ADMIN/Pictures/Efrei/JS/Codeflix/Correction/e05.js')
 
 var arg = process.argv[2]
 
 if (!arg) // ! = not => donc pas, (!true) = false; vice versa
     return;
 
-    else if (!fs.existsSync(arg)) {
+else if (!fs.existsSync(arg)) {
     console.log(`I don't know if you know that I can't duplicate things that don't exist `)
     return
 }  
